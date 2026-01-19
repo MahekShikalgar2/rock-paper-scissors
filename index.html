@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🪨 Rock 📄 Paper ✂️ Scissors</h1>
+            <p class="subtitle">Player vs Computer</p>
+        </header>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <div class="score-item">
+                <div class="score-label">Player</div>
+                <div class="score-value" id="playerScore">0</div>
+            </div>
+            <div class="score-divider">VS</div>
+            <div class="score-item">
+                <div class="score-label">Computer</div>
+                <div class="score-value" id="computerScore">0</div>
+            </div>
+        </div>
+
+        <!-- Game Area -->
+        <div class="game-area">
+            <!-- Player Selection Display -->
+            <div class="selection-display">
+                <div class="selection-box">
+                    <div class="selection-label">Your Choice</div>
+                    <div class="selection-icon" id="playerChoice">❓</div>
+                </div>
+                <div class="vs-divider">VS</div>
+                <div class="selection-box">
+                    <div class="selection-label">Computer</div>
+                    <div class="selection-icon" id="computerChoice">❓</div>
+                </div>
+            </div>
+
+            <!-- Result Message -->
+            <div class="result-message" id="resultMessage">
+                Choose your weapon!
+            </div>
+
+            <!-- Choice Buttons -->
+            <div class="choices">
+                <button class="choice-btn" id="rock" data-choice="rock">
+                    <span class="btn-icon">🪨</span>
+                    <span class="btn-text">Rock</span>
+                </button>
+                <button class="choice-btn" id="paper" data-choice="paper">
+                    <span class="btn-icon">📄</span>
+                    <span class="btn-text">Paper</span>
+                </button>
+                <button class="choice-btn" id="scissors" data-choice="scissors">
+                    <span class="btn-icon">✂️</span>
+                    <span class="btn-text">Scissors</span>
+                </button>
+            </div>
+
+            <!-- Restart Button -->
+            <button class="restart-btn" id="restartBtn">🔄 Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
