@@ -23,6 +23,7 @@ Built with **HTML, CSS, and JavaScript**, it features **score tracking, round re
 
 ![Game Start](home.png)
 
+
 **Scoreboard & Round Result**
 
 ![Round Result](win.png)
